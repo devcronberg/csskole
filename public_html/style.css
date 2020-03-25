@@ -1,0 +1,13 @@
+body {
+  margin: 10px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.imgright {
+  float: right;
+  margin: 5px;
+  overflow: auto;
+}
