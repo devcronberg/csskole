@@ -3,7 +3,7 @@
 
 ## Dit første C\# program
 
-<a href="http://youtu.be/-4eyBPRbwsU?hd=1"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" width="150"></a>
+<a target="_blank" href="http://youtu.be/-4eyBPRbwsU?hd=1"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" alt="Video" width="100"></a>
 
 - Sørg for at have en mappe til kode - eksempelvis \\csskole\\helloworld
 - Start Visual Studio Code 
