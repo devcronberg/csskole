@@ -16,6 +16,24 @@
 ```
 dotnet new console 
 ```
+
+Det vil skabe forskellige filer - herunder Program.cs med C\# kode:
+
+```csharp
+using System;
+
+namespace Ex01HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+```
+
 - Klik på program.cs og vent til VSC spørger om der ikke skal tilføjes konfiguration til afvikling af c# kode
   - Hvis der ikke kommer en dialog boks frem (vent lige lidt - kan godt tage lidt tid) så mangler du at installere C# extension - se [her](../Y02InstallationVSC/readme.md)
 - Kør program
