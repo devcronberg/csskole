@@ -3,7 +3,7 @@
 
 ## Introduktion til C\# 
 
-<a target="_blank" href="https://www.youtube.com/watch?v=5beTdtMZI_M"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" alt="Video" width="100"></a>
+<a target="_blank" href="https://www.youtube.com/watch?v=-4eyBPRbwsU"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" alt="Video" width="100"></a>
 
 I det følgende antages at du har erfaring med programmering fra et eller andet sprog!
 
