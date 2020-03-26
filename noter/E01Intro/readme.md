@@ -46,11 +46,12 @@ Her en agenda til video:
     - Ekstra video om kompilering
     - Ekstra video om programflow
     - Ekstra video om fejlhåndtering -->
-- [Installation af .NET Core](../Y01InstallationNetCore/readme.md)
-- [Installation af Visual Studio Code](../Y02InstallationVSC/readme.md)
+- EXTRA VIDEO: [Installation af .NET Core](../Y01InstallationNetCore/readme.md)
+- EXTRA VIDEO: [Installation af Visual Studio Code](../Y02InstallationVSC/readme.md)
   - Kan jeg bruge Visual Studio (Windows/Mac)
-- [Dit første program](../Y03HelloWorld/readme.md)
+- EXTRA VIDEO: [Dit første program](../Y03HelloWorld/readme.md)
 - Du bør på forhånd vide noget om grundlæggende programmering
+  - EXTRA VIDEO: [Introduktion til C#](..../Y04IntroCS/readme.md)
   - Syntaks
     - Forklarer C# syntaks undervejs
   - Kompilering / Oversættelse
@@ -61,4 +62,3 @@ Her en agenda til video:
     - Forklarer if/switch/for mv undervejs
   - Fejlhåndtering
     - Forklarer try/catch mv undervejs
-- [Introduktion til C#](..../Y04IntroCS/readme.md)
