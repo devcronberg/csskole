@@ -33,32 +33,77 @@ Her en agenda til video:
     - Polymorfi
   - Simple eksempler
     - Terning(er)
-    - Mor/Barn
-    - Geometriske figurer
   - Prøv det selv
   - Opgaver
     - Simple
     - Lidt mere avancerede
+- Installation af runtime og udviklingsmiljø
+  - **EXTRA VIDEO**: [Installation af .NET Core](../Y01InstallationNetCore/readme.md)
+  - **EXTRA VIDEO**: [Installation af Visual Studio Code](../Y02InstallationVSC/readme.md)
+    - Kan jeg bruge Visual Studio (Windows/Mac)?
 - Forudsætninger
-  <!-- 
-  - Hvis du mangler noget viden...  
-    - Ekstra video om hukommelse og variabler
-    - Ekstra video om kompilering
-    - Ekstra video om programflow
-    - Ekstra video om fejlhåndtering -->
-- EXTRA VIDEO: [Installation af .NET Core](../Y01InstallationNetCore/readme.md)
-- EXTRA VIDEO: [Installation af Visual Studio Code](../Y02InstallationVSC/readme.md)
-  - Kan jeg bruge Visual Studio (Windows/Mac)
-- EXTRA VIDEO: [Dit første program](../Y03HelloWorld/readme.md)
-- Du bør på forhånd vide noget om grundlæggende programmering
-  - EXTRA VIDEO: [Introduktion til C#](..../Y04IntroCS/readme.md)
-  - Syntaks
-    - Forklarer C# syntaks undervejs
-  - Kompilering / Oversættelse
-    - Viser kompilering mv i .NET
-  - Hukommelse og variabler
-    - Forklarer forskellige simple typer undervejs
-  - Programflow
-    - Forklarer if/switch/for mv undervejs
-  - Fejlhåndtering
-    - Forklarer try/catch mv undervejs
+  - Jeg antager du kender til grundlæggende programmering fra din uddannelse
+    - Forløbet er ikke velegnet til studerende som ikke har nogen programmeringserfaring
+      - Syntaks
+      - Kompilering / Oversættelse
+      - Hukommelse og variabler
+      - Programflow
+      - Fejlhåndtering
+  - **EXTRA VIDEO**: [Introduktion til C#](..../Y04IntroCS/readme.md)
+  - **EXTRA VIDEO**: [Dit første program - Hello World](../Y03HelloWorld/readme.md)
+
+## Opgaver til dette modul
+
+### Hello World
+
+Sørg for at have .NET Core og Visual Studio Code installeret, og få oprettet og afviklet en Hello world-applikation. Find videoer til alle tre ting ovenfor.
+
+### Hello World x2
+
+Skab en ny konsol applikation (se video ovenfor - dit første program), men i stedet for at udskrive "Hello world!" skal applikationen:
+
+- Ved hjælp af en for-løkke tælle og udskrive tal fra 0-9
+  - Hvis tallet er mindre eller lig med 4 skal den skrive * samt tal
+  - Hvis tallet er større end 4 skal den skrive ! samt tal
+
+```
+*0
+*1
+*2
+*3
+*4
+!5
+!6
+!7
+!8
+!9
+```
+
+<details>
+ <summary></summary>
+```csharp
+using System;
+
+namespace demo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (i <= 4)
+                {
+                    Console.WriteLine("*" + i);
+                }
+                else
+                {
+                    Console.WriteLine("!" + i);
+                }
+
+            }
+        }
+    }
+}
+```
+</details>
