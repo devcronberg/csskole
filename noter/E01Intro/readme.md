@@ -50,7 +50,7 @@ Her en agenda til video:
     - Ekstra video om fejlhåndtering -->
 - [Installation af .NET Core](../Y01InstallationNetCore/readme.md)
 - [Installation af Visual Studio Code](../Y02InstallationVSC/readme.md)
-- [Dit første program]()
+- [Dit første program](../Y03HelloWorld/readme.md)
 
 ## Video
 

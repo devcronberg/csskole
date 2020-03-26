@@ -1,6 +1,8 @@
 # Objektorienteret programmering
 *Online forløb afviklet i marts/april 2020 af Michell Cronberg. Videoer kan findes [her](https://www.youtube.com/channel/UCZ3FUWtw3OsLiEPmA_NbyDA/videos).*
 
+<a href="http://youtu.be/-4eyBPRbwsU?hd=1"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" width="150"></a>
+
 ## Dit første C\# program
 
 - Sørg for at have en mappe til kode - eksempelvis \\csskole\\helloworld
