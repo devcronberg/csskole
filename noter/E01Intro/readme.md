@@ -79,8 +79,10 @@ Skab en ny konsol applikation (se video ovenfor - dit første program), men i st
 !9
 ```
 
-<details>
- <summary></summary>
+### Løsning
+
+<details><summary>Her er min løsning</summary>
+<p>
 ```csharp
 using System;
 
@@ -106,4 +108,8 @@ namespace demo
     }
 }
 ```
+</p>
 </details>
+
+
+
