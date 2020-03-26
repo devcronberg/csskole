@@ -1,5 +1,5 @@
 # Objektorienteret programmering
-*Online forløb afviklet i marts/april 2020. Materiale må kun benyttes med tilladelse fra Michell Cronberg.*
+*Online forløb afviklet i marts/april 2020 af Michell Cronberg. Videoer kan findes [her](https://www.youtube.com/channel/UCZ3FUWtw3OsLiEPmA_NbyDA/videos).*
 
 ## Installation af .NET Core
 Du kan findes installationsfiler direkte hos Microsoft på https://dotnet.microsoft.com/download.

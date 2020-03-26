@@ -1,11 +1,9 @@
 # Objektorienteret programmering
 *Online forløb afviklet i marts/april 2020 af Michell Cronberg. Videoer kan findes [her](https://www.youtube.com/channel/UCZ3FUWtw3OsLiEPmA_NbyDA/videos).*
 
-## Installation af Visual Studio Code
-Du kan findes installationsfiler direkte hos Microsoft på https://code.visualstudio.com/download. Jeg vil samtidigt foreslå, at du installerer følgende extensions (se video):
+## Hvad er variabler
 
-- C#
-- C# Extensions
+I videoen henviser jeg til det site jeg har oprettet til introfag relateret cpu, elektronik, programmering med videre. Du kan finde det på https://csdemo.cronberg.dk. Her kan du lege med binære tal, porte, hukommelse med videre.
 
 ## Video
 
