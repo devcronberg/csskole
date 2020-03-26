@@ -1,9 +1,9 @@
 # Objektorienteret programmering
-*Online forløb afviklet i marts/april 2020 af Michell Cronberg. Videoer kan findes [her](https://www.youtube.com/channel/UCZ3FUWtw3OsLiEPmA_NbyDA/videos).*
-
-<a href="http://youtu.be/-4eyBPRbwsU?hd=1"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" width="150"></a>
+*Online forløb afviklet i marts/april 2020 af Michell Cronberg.*
 
 ## Dit første C\# program
+
+<a href="http://youtu.be/-4eyBPRbwsU?hd=1"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" width="150"></a>
 
 - Sørg for at have en mappe til kode - eksempelvis \\csskole\\helloworld
 - Start Visual Studio Code 
@@ -27,8 +27,4 @@ dotnet new console
         - Fortsæt med F5
   
 Tillykke - du har afviklet en C\# applikation!
-
-## Video
-
-Videoen som disse noter er relateret til kan findes [her](http://youtu.be/-4eyBPRbwsU?hd=1)
 
