@@ -1,8 +1,8 @@
 # Objektorienteret programmering
-*Online forløb afviklet i marts/april 2020 af Michell Cronberg.*
+
+_Online forløb afviklet i marts/april 2020 af Michell Cronberg._
 
 ## Intro til forløbet
-
 
 <a target="_blank" href="http://youtu.be/E7Aocm1Q0PM?hd=1"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" alt="Video" width="100"></a>
 
@@ -18,10 +18,14 @@ Her en agenda til video:
   - [Generelle links](https://github.com/devcronberg/kursus/blob/master/README.md#indhold)
 - Hvad er målet
   - Objektorienteret programmering med C\#
+    - Objektorienteret principper
+      - Abstraktion
+      - Indkapsling
+      - Nedarvning
+      - Polymorfi
     - Klasser og strukturer
     - Hukommelsesteori
       - Stack/Heap
-    - Objektorienteret principper
     - Felter
     - Indkapsling (get/set - egenskaber)
     - Metoder
@@ -63,7 +67,7 @@ Sørg for at have .NET Core og Visual Studio Code installeret, og få oprettet o
 Skab en ny konsol applikation (se video ovenfor - dit første program), men i stedet for at udskrive "Hello world!" skal applikationen:
 
 - Ved hjælp af en for-løkke tælle og udskrive tal fra 0-9
-  - Hvis tallet er mindre eller lig med 4 skal den skrive * samt tal
+  - Hvis tallet er mindre eller lig med 4 skal den skrive \* samt tal
   - Hvis tallet er større end 4 skal den skrive ! samt tal
 
 ```
@@ -82,7 +86,6 @@ Skab en ny konsol applikation (se video ovenfor - dit første program), men i st
 ### Løsning
 
 <details><summary>Her er min løsning</summary>
-
 
 ```csharp
 using System;
