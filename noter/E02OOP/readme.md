@@ -163,17 +163,11 @@ Det klassiske eksamensspørgsmål er "Bekriv med egne ord de fire grundlæggende
 
 ## Opgaver
 
-Der er en enkelt og simpel opgave som ikke kræver noget kode fra din side, og du behøver ikke forstå syntaksen lige nu - men ideen er at du skal kunne se de forskellige principper i spil. Prøv at se på klassen Terning, LudoTerning og koden i Main-metoden. Du skal ikke nødvendigvis forstå syntaks men bare få en ide om hvad OOP kan.
+### Find de objektorienterede principper
 
-Kode skaber følgende hierarki:
+Der er en enkelt og simpel opgave som ikke kræver noget kode forståelse fra din side. Du skal blot se ovenstående video og gentage det jeg gør på din egen maskine. På den måde kan du måske identificere de forskellige objektorienterede principper. I de efterfølgende moduler begynder vi at kode selv.
 
-![](terning2.png)
-
-- Se video relateret til opgaven
-- Opret en [tom konsolapplikation](../Y03HelloWorld/readme.md)
-- Erstat al kode med nedenstånde kode
-- Prøv at afvikle koden (se [tom konsolapplikation](../Y03HelloWorld/readme.md)) nogle gange så du kan se hvad koden gør
-- Igen - du behøver ikke forstå syntaks/kode men bare få en ide om hvad vi skal kigge på de kommende moduler
+Den kode jeg kopiere ind i projektet er her:
 
 ```csharp
 using System;
@@ -184,40 +178,10 @@ namespace Demo
     {
         private static void Main(string[] args)
         {
-
-            // Opret en variabel af typen Terning
-            // Skab en ny terning i hukommelsen
-            // Gem reference i t1
-            Terning t1 = new Terning();
-
-            // Bind kode til hændelse
-            t1.Sekser += (s, e) => Console.Beep();
-            // Ryst terning
-            t1.Ryst();
-            // Skriv værdi
-            t1.Skriv();
+            // Her starter program
 
 
-            // Indkapsling og brug af felter og metoder (se koden i SætVærdi og Skriv)
-            // SetVærdi checker at værdi er korrekt (prøv at rette til 7 feks)
-            t1.SetVærdi(2);
-            t1.Skriv();
-
-            // Abstraktion (den der benytter terningen behøver ikke
-            // kende noget til ErWeekend - prøv at se hvad Skriv gør)
-            t1.Skriv();
-
-            // Nedarvning - genbrug af kode fra Terning (se LudoTerning)
-            LudoTerning t2 = new LudoTerning();
-            t2.Skriv();
-
-            // Polymorfi (afhængig af typen på objektet kalder runtime den rigtige Skriv)
-            Terning t3;
-            t3 = new Terning();
-            t3.Skriv();
-            t3 = new LudoTerning();
-            t3.Skriv();
-
+            // Her slutter program
         }
 
     }
@@ -294,3 +258,7 @@ namespace Demo
 
 }
 ```
+
+Kode skaber til orientering følgende hierarki:
+
+![](terning2.png)
