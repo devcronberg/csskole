@@ -165,6 +165,8 @@ Det klassiske eksamensspørgsmål er "Bekriv med egne ord de fire grundlæggende
 
 ### Find de objektorienterede principper
 
+<a target="_blank" href="https://youtu.be/jHPO3LYDoMQ"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" alt="Video" width="100"></a>
+
 Der er en enkelt og simpel opgave som ikke kræver noget kode forståelse fra din side. Du skal blot se ovenstående video, sætte video på pause ind i mellem, og gentage det jeg gør på din egen maskine. På den måde kan du måske identificere de forskellige objektorienterede principper, og det er vigtigt du gør det selv - også selv kodeforståelsen ikke er så stor. I de efterfølgende moduler begynder du at kode selv.
 
 Den kode jeg kopierer ind i projektet er her:
