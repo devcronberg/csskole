@@ -183,7 +183,6 @@ namespace Demo
 
             // Her slutter program
         }
-
     }
 
     public class Terning
