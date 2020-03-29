@@ -1,9 +1,10 @@
 # Objektorienteret programmering
-*Online forløb afviklet i marts/april 2020 af Michell Cronberg.*
 
-## Objektorienteret programmering
+_Online forløb afviklet i marts/april 2020 af Michell Cronberg._
 
-<a target="_blank" href="http://youtu.be/E7Aocm1Q0PM?hd=1"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" alt="Video" width="100"></a>
+## Objektorienterede principper
+
+<a target="_blank" href="https://www.youtube.com/watch?v=oK4U_QxM-Dk"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" alt="Video" width="100"></a>
 
 ### Paradigmer
 
@@ -24,7 +25,7 @@ De fleste moderne sprog som C#, Java, Dart mv benytter elementer fra alle paradi
 
 ### Værktøj til forståelse af OOP
 
-I mine år som instruktør har jeg fundet et par gode værktøjer som kan hjælpe med at forstå grundlaget, pricipperne og slutteligt koden bag objektorienteret programmering. 
+I mine år som instruktør har jeg fundet et par gode værktøjer som kan hjælpe med at forstå grundlaget, pricipperne og slutteligt koden bag objektorienteret programmering.
 
 Det ene er at benytte terninger af forskelig art
 
@@ -32,7 +33,7 @@ Det ene er at benytte terninger af forskelig art
 
 Billede af <a href="https://pixabay.com/da/users/472301-472301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=812111">Shahid Abdullah</a> fra <a href="https://pixabay.com/da/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=812111">Pixabay</a>
 
-De er meget simple men kan alligevel beskrive alle aspekter inden for OOP. Og så er det noget fysisk du kan kan stående på dit bord eller have i lommen. Alle gamle tricks relateret til hukommelse og abstraktion må bruges - og dette er et af dem. 
+De er meget simple men kan alligevel beskrive alle aspekter inden for OOP. Og så er det noget fysisk du kan kan stående på dit bord eller have i lommen. Alle gamle tricks relateret til hukommelse og abstraktion må bruges - og dette er et af dem.
 
 Det andet er at se den kode der bliver udviklet som noget du udvikler til dig selv, men i stedet noget du udvikler til et team.
 
@@ -122,12 +123,12 @@ public class Terning
 
 </details>
 
-
 ### Instanser
 
-En klasse er en skabelon for instanser - i OOP også kaldet objekter. Man kan typisk (men ikke altid) skal så mange instanser af klassen man ønsker, og **de er alle ens** bortset fra objekternes data (felter). 
+En klasse er en skabelon for instanser - i OOP også kaldet objekter. Man kan typisk (men ikke altid) skal så mange instanser af klassen man ønsker, og **de er alle ens** bortset fra objekternes data (felter).
 
 #### Terning
+
 Så fem instanser af en terning er helt ens bortset fra værdien. De fem terninger bliver af runtime placeret i hukommelsen, og der er gjort plads til et heltal (værdi) samt lidt overhead til at identificere klassen. Metoder og hændelser er placeret et helt andet sted, og ved afvikling arbejder de på objekts data (felter).
 
 ![](klasserobjekt.png)
@@ -139,7 +140,7 @@ Så fem instanser af en terning er helt ens bortset fra værdien. De fem terning
 Det klassiske eksamensspørgsmål er "Bekriv med egne ord de fire grundlæggende principper i objektorienteret programmering", og det hurtige svar er
 
 - Abstraktion
-  - Hvis Svend benytter en klasse til at beskrive en Terning behøver Bent ikke forstå hvordan terningen fungerer. Han skal bare have et simpelt *interface* at arbejde med, men i virkeligheden kan der være en masse kode i terningen som er skjult for Bent.
+  - Hvis Svend benytter en klasse til at beskrive en Terning behøver Bent ikke forstå hvordan terningen fungerer. Han skal bare have et simpelt _interface_ at arbejde med, men i virkeligheden kan der være en masse kode i terningen som er skjult for Bent.
     - Værdi
     - Ryst
     - Skriv
@@ -156,8 +157,8 @@ Det klassiske eksamensspørgsmål er "Bekriv med egne ord de fire grundlæggende
 - Polymorfi
   - Det sværeste begreb og forstå (og kode) men handler om, at et objekt kan have mange former afhængig af hvilken variabeltype der benyttes sålænge variabeltypen er højere i hirarkiet end objektet (fordi et barn i et hierarki **er** jo en mor - med eventuelle tilføjelser)
     - En ludoterning er en terning og har dermed metoder som terning har - herunder en Skriv. Men skriv fungerer anderledes i en ludoterning end i en terning
-      - ternings Skriv() = [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ]
-      - ludoternings Skriv() = [ 1 ] [ 2 ] [ S ] [ 4 ] [ G ] [ 6 ]
+      - ternings Skriv() = [ 1 ][ 2 ] [ 3 ][ 4 ] [ 5 ][ 6 ]
+      - ludoternings Skriv() = [ 1 ][ 2 ] [ S ][ 4 ] [ G ][ 6 ]
     - Men kompiler/runtime er ligeglad med om der ligger en terning eller ludoterning i hukommelsen hvis referencen er gemt i en variabel af typen terning eller ludoterning. I koden kalder du blot Skriv, og så skal runtime nok finde den rigtige metode at afvikle
 
 ## Opgaver
@@ -188,7 +189,7 @@ namespace Demo
             // Skab en ny terning i hukommelsen
             // Gem reference i t1
             Terning t1 = new Terning();
-            
+
             // Bind kode til hændelse
             t1.Sekser += (s, e) => Console.Beep();
             // Ryst terning
@@ -224,7 +225,7 @@ namespace Demo
     public class Terning
     {
 
-        private int værdi = 1;  
+        private int værdi = 1;
         public event EventHandler Sekser;
 
         public void SetVærdi(int value)
@@ -293,4 +294,3 @@ namespace Demo
 
 }
 ```
-
