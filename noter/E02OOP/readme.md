@@ -165,9 +165,9 @@ Det klassiske eksamensspørgsmål er "Bekriv med egne ord de fire grundlæggende
 
 ### Find de objektorienterede principper
 
-Der er en enkelt og simpel opgave som ikke kræver noget kode forståelse fra din side. Du skal blot se ovenstående video og gentage det jeg gør på din egen maskine. På den måde kan du måske identificere de forskellige objektorienterede principper. I de efterfølgende moduler begynder vi at kode selv.
+Der er en enkelt og simpel opgave som ikke kræver noget kode forståelse fra din side. Du skal blot se ovenstående video, sætte video på pause ind i mellem, og gentage det jeg gør på din egen maskine. På den måde kan du måske identificere de forskellige objektorienterede principper, og det er vigtigt du gør det selv - også selv kodeforståelsen ikke er så stor. I de efterfølgende moduler begynder du at kode selv.
 
-Den kode jeg kopiere ind i projektet er her:
+Den kode jeg kopierer ind i projektet er her:
 
 ```csharp
 using System;
