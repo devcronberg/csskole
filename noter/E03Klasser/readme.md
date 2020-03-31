@@ -15,23 +15,7 @@ class Terning
 }
 ```
 
-Med mindre man tilføjer yderligere kode skal man benytte `new` kodeordet til at skabe instanser, og gemme referencen i en variabel af den korrekte type
-
-```csharp
-Terning t1;
-t1 = new Terning();
-
-// elle
-
-Terning t2 = new Terning();
-
-```
-
-Man kan muligvis undre sig lidt over, at objektet allerede består af forskellige metoder som ToString, Equals mv, men det skyldes at alle objekter automatisk arver fra en klasse i frameworket (System.Object):
-
-![](objekt.png)
-
-### Placering af klasser
+## Placering af klasser
 
 Normalt placeres klasser på namespace niveau.
 
@@ -71,7 +55,25 @@ namespace demo
 }
 ```
 
-## Referencetype
+## Brug af new
+
+Med mindre man tilføjer yderligere kode skal man benytte `new` kodeordet til at skabe instanser, og gemme referencen i en variabel af den korrekte type
+
+```csharp
+Terning t1;
+t1 = new Terning();
+
+// eller
+
+Terning t2 = new Terning();
+
+```
+
+Man kan muligvis undre sig lidt over, at objektet allerede består af forskellige metoder som ToString, Equals mv, men det skyldes at alle objekter automatisk arver fra en klasse i frameworket (System.Object):
+
+![](objekt.png)
+
+### Referencetype
 
 Det er vigtigt at forstå, at en klasse er en referencetype, og der dermed i variabler ikke opbevares værdier men referencer (vi kigger på hukommelsesteori senere). En referencetype indikerer samtidigt, at en variabel kan få en `null` værdi hvilket betyder at den ikke indeholder noget (ikke peger på noget). Derfor risikerer du at løbe ind i en NullReferenceException:
 
@@ -346,9 +348,7 @@ class Terning
 
 Men det bruges ikke meget fordi den først kører når objektet fjernes fra hukommelsen og afvikles i øvrigt på en separat tråd. Se evt. [using](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement).
 
-## Opgaver
-
-### Simple (data) klasse
+## Opgave: Simpel (data) klasse
 
 I denne opgave skal du blot skabe en simpel data klasse (udelukkende felter), der kan opbevare data på en person, og du må gerne i denne opgave benytte offenlige felter. Klassen skal hedde Person og skal indeholde felter som
 
@@ -377,7 +377,7 @@ Person oprettet
 Mathias er født i 2006
 ```
 
-#### Løsning
+### Løsning
 
 <details><summary>Her er min løsning</summary>
 
@@ -419,7 +419,7 @@ namespace Demo
 
 </details>
 
-### Simpel terning
+## Opgave: Simpel terning
 
 Du skal skabe en terning med følgende medlemmer
 
