@@ -430,6 +430,8 @@ Du skal skabe en terning med følgende medlemmer
   - Se evt. løsning hvor jeg benytter Systen.Random objektet
   - Husk at sætte HarVæretSekser hvis der rystes til en sekser
 - en Skriv-metode der udskriver eksempelvis `[6] - har været sekser = True` eller `[1] - har været sekser = False`
+- en konstruktør som skaber et nyt objekt af System.Random
+  - `random = new System.Random`
 
 ![](terning.png)
 
@@ -492,7 +494,7 @@ namespace Demo
 
         public Terning()
         {
-            this.random = new Random();
+            this.random = new System.Random();
             this.Ryst();
         }
     }
