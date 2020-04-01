@@ -4,7 +4,7 @@
 
 ## Indkapsling
 
-<a target="_blank" href="http://youtu.be/E7Aocm1Q0PM?hd=1"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" alt="Video" width="100"></a>
+<a target="_blank" href="https://www.youtube.com/watch?v=NbLxoOhtFSk"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" alt="Video" width="100"></a>
 
 Et af de store principper i OOP er indkapsling hvilket typisk handler om at beskytte felter. Det gælder om at styre tildeling og aflæsning.
 
@@ -407,6 +407,26 @@ Bemærk, at du nu selv skal tilføje feltet men har mulighed for at tilføje den
 
 ## Opgave: Terning
 
+I denne opgave skal du skabe en ny konsol applikation og tilføje en terning med
+
+- en automatisk egenskab Værdi (int). Man må kun kunne tildele værdi internt (private set)
+- en automatisk egenskab HarVæretSekser (bool). Man må kun kunne tildele værdi internt (private set)
+- en Ryst-metode der ryster terningen og tildeler værdi. Hvis værdi = 6 så husk at tildel HarVæretSekser en true værdi
+  - ```this.Værdi = new Random().Next(1,7);```
+- en standard konstruktør der ryster terningen
+
+![](opgave.png)
+
+Den skal kunne testes således:
+
+```csharp
+Terning t = new Terning();
+Console.WriteLine(t.Værdi);
+t.Ryst();
+Console.WriteLine(t.Værdi);            
+Console.WriteLine("Har været sekser?: " + t.HarVæretSekser);
+```
+
 ### Løsning
 
 <details><summary>Her er min løsning</summary>
@@ -421,47 +441,119 @@ namespace Demo
         private static void Main(string[] args)
         {
             Terning t = new Terning();
-            Console.WriteLine(t.GetVærdi());    // 1
-            t.SetVærdi(6);
-            Console.WriteLine(t.GetVærdi());    // 6
-
-            // t.SetVærdi(7);                      // FEJL
-            // int v = t.GetVærdi();               // Hvis weekend - så fejl!
+            Console.WriteLine(t.Værdi);
+            t.Ryst();
+            Console.WriteLine(t.Værdi);
+            Console.WriteLine("Har været sekser?: " + t.HarVæretSekser);
         }
     }
 
     class Terning
     {
-        private int værdi;
+        public int Værdi { get; private set; }
+        public bool HarVæretSekser { get; private set; }
 
-        public int GetVærdi()
+        public void Ryst()
         {
-            if (this.ErWeekend())
-                throw new Exception("Terning må kun bruges på hverdage!");
-            return this.værdi;
+            this.Værdi = new Random().Next(1, 7);
+            if (this.Værdi == 6)
+                this.HarVæretSekser = true;
         }
-
-        public void SetVærdi(int value)
-        {
-            if (value < 1 || value > 6)
-                throw new Exception("Terning må kun have en værdi mellem 1-6");
-            this.værdi = value;
-        }
-
-        private bool ErWeekend()
-        {
-            if (DateTime.Now.DayOfWeek == DayOfWeek.Saturday || DateTime.Now.DayOfWeek == DayOfWeek.Sunday)
-                return true;
-            else
-                return false;
-        }
-
         public Terning()
         {
-            this.værdi = 1;
+            this.Ryst();
         }
     }
 }
 ```
+</details>
 
+### Ekstra opgave
+
+Hvis du har lyst kan du også skabe en klasse Bæger med
+
+- Array af fem terninger
+- En Ryst-metode der ryster alle terninger
+- En konstruktør som opretter terninger i bæger og ryster dem
+- En Skriv-metode der udskriver bægeret
+
+![](opgave2.png)
+
+Bægeret skal virke således:
+
+```csharp
+Bæger b = new Bæger();
+b.Skriv();              // x x x x x (fem tilfældige tal)
+b.Ryst();
+b.Skriv();              // x x x x x (fem tilfældige tal)
+```
+
+### Løsning
+
+<details><summary>Her er min løsning</summary>
+
+```csharp
+using System;
+
+namespace Demo
+{
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+            Bæger b = new Bæger();
+            b.Skriv();              // x x x x x (fem tilfældige tal)
+            b.Ryst();
+            b.Skriv();              // x x x x x (fem tilfældige tal)
+        }
+    }
+
+    class Terning
+    {
+        public int Værdi { get; private set; }
+        public bool HarVæretSekser { get; private set; }
+
+        public void Ryst()
+        {
+            this.Værdi = new Random().Next(1, 7);
+            if (this.Værdi == 6)
+                this.HarVæretSekser = true;
+        }
+        public Terning()
+        {
+            this.Ryst();
+        }
+    }
+
+    class Bæger
+    {
+
+        private Terning[] terninger;
+
+        public void Ryst()
+        {
+            if (this.terninger == null)
+                return;
+            foreach (var terning in this.terninger)
+                terning.Ryst();
+
+        }
+        public Bæger()
+        {
+            terninger = new Terning[5];
+            for (int i = 0; i < 5; i++)
+                terninger[i] = new Terning();
+        }
+
+        public void Skriv()
+        {
+            foreach (var terning in this.terninger)
+            {
+                Console.Write(terning.Værdi + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
+```
 </details>
