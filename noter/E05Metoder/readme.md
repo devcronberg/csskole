@@ -1,7 +1,8 @@
 # Objektorienteret programmering
-*Online forløb afviklet i marts/april 2020 af Michell Cronberg.*
 
-<a target="_blank" href="http://youtu.be/E7Aocm1Q0PM?hd=1"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" alt="Video" width="100"></a>
+_Online forløb afviklet i marts/april 2020 af Michell Cronberg._
+
+<a target="_blank" href="https://youtu.be/A9IOfe_EbOc"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" alt="Video" width="100"></a>
 
 ## Metoder
 
@@ -26,7 +27,6 @@ En metode kan enten være
 - offentlig (public)
 - privat (private)
 - protected (se senere)
-
 
 ### Flow
 
@@ -91,8 +91,6 @@ Slut Metode1
 ```
 
 </details>
-
-
 
 ### Eksempler på definering og kald
 
@@ -170,7 +168,7 @@ namespace Demo
                 return a * b;
         }
     }
-   
+
 }
 ```
 
@@ -199,7 +197,7 @@ namespace Demo
         {
             Test t = new Test();
             t.Metode1();
-            
+
             Test.Metode2();
         }
     }
@@ -251,7 +249,7 @@ namespace Demo
             this.Ryst();
         }
 
-        public static int FindTilfældigVærdi() { 
+        public static int FindTilfældigVærdi() {
             return new Random().Next(1, 7);
         }
 
@@ -274,13 +272,13 @@ Der er en del features relateret til metoder i C\# som du kan læse op på
 - rekursive metoder
 - tuples
 
-## Opgave: Terning 
+## Opgave: Terning
 
 I denne opgave skal du skabe en ny konsol applikation og tilføje en terning med
 
 - en automatisk egenskab Værdi (int). Man må kun kunne tildele værdi internt (private set)
-- en Ryst-metode der ryster terningen og tildeler værdi. 
-  - brug ```this.Værdi = new Random().Next(1,7);```
+- en Ryst-metode der ryster terningen og tildeler værdi.
+  - brug `this.Værdi = new Random().Next(1,7);`
 - en standard konstruktør der ryster terningen
 - en metode Snyd der tager en int som argument, og husker denne værdi til næste gang Ryst bliver kaldt. Næste gang Ryst kaldes skal den ikke "snyde" længere. Så du må skabe et eller flere private felter til at holde styr på snyd-værdien
 - en statisk metode FindTilfældigtTal som blot returnerer en int med et tilfældigt tal mellem 1-6. Metoden skal i øvrigt benyttes af Ryst.
