@@ -1,5 +1,6 @@
 # Objektorienteret programmering
-*Online forløb afviklet i marts/april 2020 af Michell Cronberg.*
+
+_Online forløb afviklet i marts/april 2020 af Michell Cronberg._
 
 <a target="_blank" href="http://youtu.be/E7Aocm1Q0PM?hd=1"><img src="http://cdn.cronberg.dk/kurser/div/youtube.png" alt="Video" width="100"></a>
 
@@ -14,7 +15,7 @@ Hvis vi ser på polymorfi inden for et arvehierarki (for det kan også benyttes 
 
 ## Børn kan have sin egen implementation
 
-Hvis man i "mor" markerer en metode som *virtual* kan børn **vælge** at overskrive den (bemærk - kan vælge - behøver ikke):
+Hvis man i "mor" markerer en metode som _virtual_ kan børn **vælge** at overskrive den (bemærk - kan vælge - behøver ikke):
 
 Her Skriv-metoden ikke overskrevet i LudoTerning, og derfor kaldes mors Skriv
 
@@ -29,9 +30,9 @@ namespace Demo
         {
 
             LudoTerning l = new LudoTerning();
-            l.Skriv();                          // [ 1 ] eller [ 2 ] eller [ 3 ] 
-                                                // [ 4 ] eller [ 5 ] eller [ 6 ] 
-   
+            l.Skriv();                          // [ 1 ] eller [ 2 ] eller [ 3 ]
+                                                // [ 4 ] eller [ 5 ] eller [ 6 ]
+
         }
     }
 
@@ -81,8 +82,8 @@ namespace Demo
         {
 
             LudoTerning l = new LudoTerning();
-            l.Skriv();                          // [ 1 ] eller [ 2 ] eller [ S ] 
-                                                // [ 4 ] eller [ G ] eller [ 6 ] 
+            l.Skriv();                          // [ 1 ] eller [ 2 ] eller [ S ]
+                                                // [ 4 ] eller [ G ] eller [ 6 ]
         }
     }
 
@@ -228,12 +229,12 @@ namespace Demo
 
     class FarveTerning : Terning
     {
-    
+
         public override void Skriv()
         {
             if(this.Værdi<4)
                 Console.WriteLine($"[ Rød ]");
-            else 
+            else
                 Console.WriteLine($"[ Grøn ]");
 
         }
@@ -252,7 +253,7 @@ namespace Demo
     {
         private static void Main(string[] args)
         {
-            
+
             // Bæger til to terninger (bemærk - array af mor)
             Terning[] bæger = new Terning[2];
             bæger[0] = new BrætSpilTerning();
@@ -308,12 +309,12 @@ namespace Demo
 
     class FarveTerning : Terning
     {
-    
+
         public override void Skriv()
         {
             if(this.Værdi<4)
                 Console.WriteLine($"[ Rød ]");
-            else 
+            else
                 Console.WriteLine($"[ Grøn ]");
 
         }
@@ -323,7 +324,7 @@ namespace Demo
 
 ![](terninger.png)
 
-## Opgave: Terning med polymorfi
+## Opgave: Kæledyr
 
 Du skal skabe en tom konsol app med følgende klasser:
 
@@ -344,7 +345,7 @@ internal class Hund : Kæledyr {
 }
 ```
 
-Din opgave er at gøre Kendelyd i Kæledyr virtuel således, at du kan overskrive Kendelyd() i  Fugl og Hund. Fuglen skal sige Pip og hunden Vov. 
+Din opgave er at gøre Kendelyd i Kæledyr virtuel således, at du kan overskrive Kendelyd() i Fugl og Hund. Fuglen skal sige Pip og hunden Vov.
 
 Følgende skal virke:
 
